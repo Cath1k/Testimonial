@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function showNextCard(){
   cards.forEach(card => card.style.display = 'none');
   cards[currentIndex].style.display ='block';
-  currentIndex = ( currentIndex +1) % cards.length; }
+  currentIndex = ( currentIndex + 1) % cards.length; }
 });
   
