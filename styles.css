@@ -1,0 +1,39 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62,5%;
+}
+
+:root {
+  --color-primary: #3498b;
+  --color-background: #f4f7f6;
+  --color-text: #333;
+  --card-bg: #ffffff;
+  --space-md: 2rem;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: var(--space-md);
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.testimonial-grid {
+ display:grid;
+  grid-template-colums: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-colums: repeat (3, 1fr);
+  }
+}
